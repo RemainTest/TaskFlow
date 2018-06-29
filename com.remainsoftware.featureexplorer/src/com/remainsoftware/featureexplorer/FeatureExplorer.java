@@ -36,20 +36,9 @@ public class FeatureExplorer extends ViewPart {
 	}
 
 	private void createContextMenu() {
-		// Create menu manager.
 		MenuManager menuMgr = new MenuManager();
-		// menuMgr.setRemoveAllWhenShown(true);
-		// menuMgr.addMenuListener(new IMenuListener() {
-		// public void menuAboutToShow(IMenuManager mgr) {
-		// fillContextMenu(mgr);
-		// }
-		// });
-
-		// Create menu.
 		Menu menu = menuMgr.createContextMenu(treeViewer.getControl());
 		treeViewer.getControl().setMenu(menu);
-
-		// Register menu for extension.
 		getSite().registerContextMenu(menuMgr, treeViewer);
 	}
 
