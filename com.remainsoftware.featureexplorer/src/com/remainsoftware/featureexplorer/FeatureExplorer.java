@@ -32,7 +32,6 @@ public class FeatureExplorer extends ViewPart {
 	private TreeViewer treeViewer;
 
 	public FeatureExplorer() {
-		// fixed the bug.
 		text = new Text(null, 0);
 	}
 
