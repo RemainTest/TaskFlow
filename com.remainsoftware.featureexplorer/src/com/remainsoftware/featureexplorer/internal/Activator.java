@@ -21,7 +21,6 @@ public class Activator extends AbstractUIPlugin {
 	@Override
 	protected void initializeImageRegistry(ImageRegistry reg) {
 		super.initializeImageRegistry(reg);
-
 		Enumeration<?> enumer = context.getBundle().findEntries("icons", "*.gif", false);
 		while (enumer.hasMoreElements()) {
 			URL url = (URL) enumer.nextElement();
